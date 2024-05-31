@@ -6,4 +6,7 @@ def hello ():
 @app.route("/chau")
 def goodbye ():
     return "goodbye"
+@app.route('/saludo/<nombre>')
+def hola(nombre):
+    return f'Saludos, {nombre}!'
 app.run()
